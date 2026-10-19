@@ -1,0 +1,5 @@
+Feature,Sample Size,Normal KS-Stat,Normal p-value,Normal Fit,Log-Normal KS-Stat,Log-Normal p-value,Log-Normal Fit
+Flow Duration,5000,0.3591,< 1.00e-300 (p < 0.001),Rejected (p < 0.001),0.1109,5.00e-54 (p < 0.001),Superior to Gaussian
+Total Fwd Packets,5000,0.3404,< 1.00e-300 (p < 0.001),Rejected (p < 0.001),0.1508,9.15e-100 (p < 0.001),Superior to Gaussian
+Total Length of Fwd Packets,5000,0.4154,< 1.00e-300 (p < 0.001),Rejected (p < 0.001),0.2011,1.12e-177 (p < 0.001),Superior to Gaussian
+Flow Packets/s,5000,0.4398,< 1.00e-300 (p < 0.001),Rejected (p < 0.001),0.1008,1.08e-44 (p < 0.001),Superior to Gaussian

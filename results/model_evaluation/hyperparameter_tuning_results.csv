@@ -1,0 +1,5 @@
+Experiment ID,Hidden Layers,Dropout Rate,Learning Rate,Best Val Loss,Best Val Accuracy (%)
+EXP-1 (Baseline),"[128, 64, 32]",0.3,0.001,0.0661,99.8
+EXP-2 (Deep Arch),"[256, 128, 64, 32]",0.3,0.001,0.1,99.81
+EXP-3 (High Dropout),"[128, 64, 32]",0.5,0.001,0.0763,99.11
+EXP-4 (Low LR),"[128, 64, 32]",0.3,0.0001,0.2927,98.36

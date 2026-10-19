@@ -1,0 +1,4 @@
+Strategy,Test Accuracy,Balanced Acc,Macro Precision,Macro Recall,Macro F1,ROC-AUC,Avg Precision,Attack Precision,Attack Recall,Attack F1,Benign Precision,Benign Recall,Benign F1,"Confusion Matrix (TN,FP,FN,TP)"
+Baseline MLP,0.9993,0.9993,0.9992,0.9993,0.9993,0.9997,0.9989,0.9987,0.9997,0.9992,0.9997,0.9988,0.9993,"[7704,9,2,7157]"
+Class-Weighted MLP,0.9992,0.9992,0.9992,0.9992,0.9992,0.9997,0.9989,0.9986,0.9997,0.9992,0.9997,0.9987,0.9992,"[7703,10,2,7157]"
+SMOTE + MLP,0.9988,0.9988,0.9988,0.9988,0.9988,0.9997,0.9989,0.9979,0.9996,0.9987,0.9996,0.9981,0.9988,"[7698,15,3,7156]"

@@ -1,0 +1,27 @@
+# Network Intrusion Detection & Cyberattack Pattern Analysis
+# Dependencies for Assignment II: U21ADP05 (EDA & Visualization)
+
+# Core Scientific & Data Manipulation
+numpy>=1.24.0,<2.0.0
+pandas>=2.0.0
+scipy>=1.10.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Machine Learning & Preprocessing
+scikit-learn>=1.2.0
+
+# Deep Learning (Multilayer Perceptron)
+tensorflow>=2.12.0
+
+# Jupyter & Notebook execution
+jupyter>=1.0.0
+ipykernel>=6.20.0
+
+# Academic Documentation Generation
+python-docx>=1.1.0
+
+# Testing & Quality Assurance
+pytest>=7.0.0

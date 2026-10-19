@@ -1,0 +1,3 @@
+Traffic Class,Flow Count,Empirical Probability P(X),Percentage (%),Cumulative Prob,95% CI Lower,95% CI Upper
+BENIGN,26135,0.5227,52.27,0.5227,0.518322,0.527078
+ATTACK,23865,0.4773,47.73,1.0,0.472922,0.481678
