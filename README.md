@@ -76,6 +76,32 @@ This project evaluates the official **CIC-IDS2017 (Canadian Institute for Cybers
    ```
 4. *Notice*: The software automatically detects any placed CSV file in `data/`. If no CSV file is present, the code halts with an informative diagnostic message rather than fabricating data.
 
+### Data Collection and Preprocessing Overview:
+1. **Dataset Source**: This project uses the CIC-IDS2017 dataset, which contains network traffic records representing benign activities and different cyberattacks.
+   - Official dataset: [https://www.unb.ca/cic/datasets/ids-2017.html](https://www.unb.ca/cic/datasets/ids-2017.html)
+   - Evaluated file: `Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv`
+2. **Raw Dataset**:
+   - Raw records analyzed: 50,000
+   - Benign traffic: 26,135 records (52.27%)
+   - Attack traffic: 23,865 records (47.73%)
+   - Data type: Numerical network traffic features and a target class label (`Binary_Label`: `BENIGN` vs `ATTACK`)
+3. **Data Cleaning**:
+   - **Duplicate records**: Duplicate rows were identified and removed. The recorded cleaning summary reports 427 duplicates removed.
+   - **Infinite values**: 23 infinite values (`+inf` in `Flow Bytes/s` and `Flow Packets/s`) were identified and resolved.
+   - **Missing values**: Three missing values were handled during cleaning. Missing-value checks and median imputation are also part of the preprocessing workflow.
+   - **Constant features**: Features with no variation (12 zero-variance columns) were removed because they provide no useful information for distinguishing traffic classes.
+   - **Feature and target separation**: The target class is separated from the input features before model training. Features that could leak target information are excluded where specified by the training pipeline.
+   - **Feature preprocessing**: Numerical features are imputed and standardized (`StandardScaler`) as configured in the training pipeline. Categorical features, when present, are imputed and one-hot encoded.
+4. **Cleaned Dataset**:
+   - The recorded cleaned dataset contains **49,573** network traffic records:
+   - Benign traffic: 25,709 records (51.86%)
+   - Attack traffic: 23,864 records (48.14%)
+   - The cleaned data is used for exploratory data analysis, statistical testing, visualization, and deep learning experiments.
+5. **Model Evaluation and Reproducibility**:
+   - The project contains preprocessing, training, and evaluation scripts under the `src/` directory. The repository also contains the generated visualizations, evaluation results, and project report.
+   - To reproduce the workflow, download the original dataset from the official source, place the relevant CSV file in the `data/` directory expected by the project, install the dependencies listed in `requirements.txt`, and follow the execution instructions in `README.md`.
+   - *Note: The dataset is not included directly in this repository. The recorded results depend on the dataset version, preprocessing configuration, and model-training procedure used for the experiment.*
+
 ---
 
 ## 4. Technologies & Tools

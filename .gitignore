@@ -55,10 +55,12 @@ data/*.parquet
 saved_models/
 checkpoints/
 
-# OS specific
+# OS and Editor specific
 Thumbs.db
 Desktop.ini
 .DS_Store
+~$*
+~$*.docx
 
 # Pytest cache
 .pytest_cache/
