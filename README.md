@@ -15,6 +15,12 @@
 - **CO5**: Application of EDA and Visualization (16 Marks)
 
 ---
+## Data Preprocessing
+
+See [DATA_PREPROCESSING.md](DATA_PREPROCESSING.md) for the dataset source,
+cleaning workflow, preprocessing steps, and reproducibility notes.
+
+Implementation: `src/data_loader.py` and `src/preprocessing.py`.
 
 ## 1. Project Overview & Objective
 
@@ -336,3 +342,5 @@ To publish this project to your personal GitHub account:
 - **Institution**: KPR Institute of Engineering and Technology
 - **Date of Submission**: 15.10.2026
 - **References**: IEEE format citations included in Section 10 of the generated academic report.
+
+
